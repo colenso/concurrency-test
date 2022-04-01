@@ -1,7 +1,17 @@
 {{page-title "ConcurrencyTest"}}
 
-{{!-- The following component displays Ember's default welcome message. --}}
-<WelcomePage />
-{{!-- Feel free to remove this! --}}
+<button
+  type="button"
+  {{on "click" (perform this.printEncapsulatedTaskValue)}}
+>
+Click for encapsulated task
+</button>
+
+<button
+  type="button"
+  {{on "click" (perform this.printNormalTaskValue)}}
+>
+Click for normal task
+</button>
 
 {{outlet}}
